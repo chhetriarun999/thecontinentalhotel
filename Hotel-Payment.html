@@ -1,0 +1,443 @@
+<!-------------------------------------------------------------------------------------
+Hotel-Payment.html
+Arun Chhetri (T00722321)
+ Website Designing Assignment:   The Continental Hotel 
+
+This page ask the user for their payment information and book the choosen room by user. 
+--------------------------------------------------------------------------------------->
+
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Assignment 1"> 
+        <meta name="keywords" content="HTML, CSS ">
+        <meta name="author" content="Arun Chhetri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+         Hotel - Payment
+        </title>
+        <head> 
+            <link rel="icon" href="Images/Contential-logo.jpg" type="image/png">
+            <link rel="stylesheet" href="rooms.css" type="text/css"> 
+            <style>
+                
+/*---------------------------------------------------------INTERNAL CSS---------------------------------------------   */
+ 
+/*-----Internal and inline CSS is used in this one as its less and we are suppose to use all forms of technique-----*/
+div{
+ border: 1 px solid grey ;
+  }
+
+.ticks ul li:before{
+content: '✓';
+ }
+ body{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
+             
+#room-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+#room-type, #check-in-date, #check-out-date, #special-requests {
+    font-size: 16px;
+    color: #333;
+}
+
+#special-requests {
+    font-style: italic;
+    color: #616161;
+}
+
+
+#coupon-code {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#apply-coupon {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#apply-coupon:hover {
+    background-color: #134bbf;
+}
+
+#coupon-message {
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+
+span {
+    font-weight: bold;
+}
+
+
+/* Complete Booking Button Styles */
+.complete-booking-button {
+    display: inline-block;
+    width: auto;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #1668e3, #134bbf);
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.complete-booking-button:hover {
+    background: linear-gradient(135deg, #134bbf, #1668e3);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.complete-booking-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+            </style> 
+        </head>
+        <body> 
+<!----header-->
+            <header class="hobby-header"> 
+                <div class="hobby-container">
+                    <div style="display: flex; align-items: center;">
+                        <img src="Images/Contential-logo.jpg" class="hobby-logo" alt="Logo">
+                        <div class="hobby-title">The Continental Hotel</div>
+                    </div>
+                    <nav class="hobby-nav clearfix">
+                        <ul> 
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">DINING</a></li>
+                            <li><a href="#">DESTINATIONS</a></li>
+                            <li><a href="#">OFFERS</a></li>
+                            <li><a href="#">MEMBERSHIPS</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </header>
+
+
+
+
+
+
+
+      <!---------------------------------------------------------BODY--------------------------------------------->
+
+        <div> 
+            <h1 style="font-size: 40Px; text-align: center; margin-bottom: 0%; margin-top: 5%; "> Payment Details </h1>
+            </div>  
+    
+             <div> 
+        <h1 > Secure Booking </h1>
+            </div>
+
+ <!---------------------------------------------------------FIELDSET FOR KEEPING IN A BOX--------------------------------------------->
+    <div style="float: left;">
+        <form action="Hotel-booked-message.html" method="get">
+        <fieldset style="border: 2px solid black; width: 520px; height: 600px;"> 
+            
+             <!--------------------------------------------------------SUB HEADING 2--------------------------------------------->
+            <div>
+            <p style=" font-size: 23px; font-weight: bold;"> Payment Method</p>
+            </div>
+           
+            <!-------------------------------------------------------1ST SMALL MESSAGES -------------------------------------------->
+            <div style="float: left; margin-left: 0%;" class="ticks"> 
+            <ul style="list-style-type: none; color: green;
+             font-size: 13px; margin-left:0% ; padding-left: 2px;">
+            <li>We use secure transmission  </li>
+            </ul>
+            </div>
+
+ <!---------------------------------------------------------ANOTHER MESSAGE--------------------------------------------->
+           <div style="float: left; margin-left: 0%;" class="ticks"> 
+            <UL style="list-style-type: none; color: green; 
+            font-size: 13px;" >
+            <li> We protect your personal information</li>
+            </ul>
+            </div>
+        
+         <!---------------------------------------------------------2 PAYMENT OPTIONS--------------------------------------------->
+        <div style="clear: both;"> </div>
+        <br> 
+        <div style="background-color: #f3f3f5; display: inline; 
+        padding:8px;  font-size: 14.68; float: left;"> Debit/Credit Card </div>
+
+        <div style="background-color: #f3f3f5; display: inline; 
+        padding:8px;  font-size: 14.68; 
+        float: left; margin-left: 5px;"> PayPal</div>
+          <div style="clear: both;"></div>
+          <hr> 
+        
+
+       <!-------------------------------------------------------IMAGE OF DIFFERENT CARDS------------------------------------------->
+        <br> 
+        <div> 
+            <img src="Images/International-Cards.jpg" width="300" height="30"> 
+        </div>
+        <br> 
+
+
+         <!-----------------------------------------------------PAYEE INFORMATION-------------------------------------------->
+          
+         <!--------------------------------------------------------NAME------------------------------------------>
+        <div> 
+          <b style=" color: #616161; font-size: 13px;"> Name on the Card* </b><br> 
+          <input type="text" name="card-on-name" required autocomplete="on" maxlength="20" 
+          style=" width:444px; height: 36px; border-top: 2px solid grey; border-radius: 3px;">
+        </div>
+        <br> 
+
+         <!---------------------------------------------------------CARD NUMBER-------------------------------------------->
+        <div> 
+        <b style="font-family: Arial, Helvetica, sans-serif; color: #616161; font-size: 13px;"> Debit/Credit card number*</b><br> 
+        <input type="text" name="card-number" maxlength="16" minlength="16" required placeholder="0000 0000 0000 0000" 
+        style="width:444px; height: 36px; border-top: 2px solid grey; border-radius: 3px;">
+        </div>
+        <br> 
+
+        <!---------------------------------------------------------CARD EXPIRATION DATE--------------------------------------------->
+            <b style="font-family: Arial, Helvetica, sans-serif; color: #616161; font-size: 13px;"> Expiration date*</b>
+            <br>    
+
+             <!---------------------------------------------------------DROP DOWN FOR SELECTING MONTH OF EXPIRATION--------------------------------------------->
+            <div style="float: left;">  
+            <select name="Month" required style="width: 94px; height: 36px; padding: 5px; font-size: 15px;
+            font-weight: bold; background-color: #f3f3f5; 
+            border-top: 2px solid grey; border-radius:3px; ">
+            
+            <option disabled selected> Months</option>
+            <Option value="jan" > 01-Jan</Option>
+            <Option value="Feb"> 02-Feb</Option>
+            <Option value="mar"> 03-March</Option>
+            <Option value="apr"> 04-April</Option>
+            <Option value="may"> 05-May</Option>
+            <Option value="june"> 06-June</Option>
+            <Option value="july"> 07-July</Option>
+            <Option value="aug"> 08-August</Option>
+            <Option value="Sep"> 09-September</Option>
+            <Option value="Oct"> 10-October</Option>
+            <Option value="Nov"> 11-November</Option>
+            <Option value="Dec"> 12-December</Option>
+            </select>
+        </div>
+
+
+         <!---------------------------------------------------------DROP DOWN FOR SELECTING YEAR OF EXPIRATION--------------------------------------------->
+        <div style="float: left;">  
+            <select name="Year" required style="
+            width: 94px; height: 36px; padding: 5px; font-size: 15px;
+            font-weight: bold; margin-left: 10px; background-color: #f3f3f5;
+             border-top: 2px solid grey; border-radius: 3px;" >
+             
+             <option disabled selected> Years</option>
+             <Option value="2025" > 2025</Option>
+             <Option value="2025" > 2026</Option>
+             <Option value="2025" > 2027</Option>
+             <Option value="2025" > 2028</Option>
+             <Option value="2025" > 2029</Option>
+             <Option value="2025" > 2030</Option>
+             <Option value="2025" > 2031</Option>
+             <Option value="2025" > 2032</Option>
+             <Option value="2025" > 2033</Option>
+             <Option value="2025" > 2034</Option>
+             <Option value="2025" > 2035</Option>
+             <Option value="2025" > 2036</Option>
+            </select>
+        </div>
+        <br>
+        
+         <!-----------------------------------------------------CLEARING THE FLOAT--------------------------------------------->
+        <div style="clear: both;"> </div>
+        <br> 
+
+
+
+ <!-------------------------------------------------------FOR SECURITY CODE OF CARD-------------------------------------------->
+        <div style="float: left;"> 
+           <b style="font-family: Arial, Helvetica, sans-serif; color: #616161; font-size: 13px;"> Security code* </b><br> 
+            <input type="text" maxlength="3" required name="security-code" 
+            style="width: 94px; height: 36px; border-top: 2px solid grey; border-radius: 3px;">
+        </div>
+
+         <!------------------------------------------------------FOR BILLING POSTAL CODE OF PAYEE------------------------------------------->
+
+        <div style="float: left; margin-left: 20px;"> 
+            <b style="font-family: Arial, Helvetica, sans-serif; color: #616161; font-size: 13px;"> Billing postal code*</b> <br> 
+            <input type="text" maxlength="6" required name="security-code" 
+            style="width: 132.35px; height: 36px; border-top: 2px solid grey; border-radius: 3px;">
+        </div>
+    </div>
+</fieldset>
+
+
+
+ <!--------------------------------------------------------2ND FIELDSET STARTED-------------------------------------------->
+   
+ <div style="float: left;">
+    <fieldset style="border: 2px solid black; width: 450px; height: 600px;"> 
+
+        <!------------------------------------------------PRICE HEADING------------------------------------------->
+        <div> 
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: bold;"> Price Details</p>
+            <hr> 
+        </div> 
+
+        <!----------------------------------------BILL INFORMATION ------------------------------------------->
+        <div style="font-size: 16.5px;"> 
+            <div style="float: left;"> 1 room x <span id="total-nights">1</span> night(s) </div>
+            <div style="float: right;"> CA $<span id="room-price">170.54</span> </div>
+            <br> 
+            <br> 
+            <div style="float: left;">Taxes</div> 
+            <div style="float: right;"> Included </div> 
+            <br> 
+            <br>  
+            <div style="float: left;">Local tax</div>
+            <div style="float: right;">CA $<span id="local-tax">8.54</span></div>
+            <br>
+            <br> 
+            <div style="color: #616161; float: left;"> Payable at property</div>
+            <br> 
+            <hr> 
+            <div style="float: left;"> <b>Total</b> </div>
+            <div style="float: right;"> <b> CA $<span id="total-price">179.08</span> </b></div>
+            <br>
+            <br> 
+            <div style="float: left;"> Pay now </div>
+            <div style="float: right;"> CA $<span id="pay-now">170.54</span> </div> 
+            <br> 
+            <br> 
+            <div style="float: left;"> Pay at property</div>
+            <div style="float: right;">CA $<span id="pay-at-property">8.54</span> </div> 
+            <br> 
+            <br>            
+            <hr> 
+        </div>
+
+        <!----------------------INPUT FOR COUPON, PROMOTION, OR DISCOUNT CODE------------------------------>
+        <div style="margin-top: 15px;">
+            <label for="coupon-code" style="color: #1668e3;">Use a coupon, credit, or promotion code</label>
+            <input type="text" id="coupon-code" placeholder="Enter code" style="width: 80%; margin-top: 5px;">
+            <button id="apply-coupon" style="background-color: #1668e3; color: white; padding: 5px 10px; border: none; margin-top: 5px;">Apply</button>
+            <p id="coupon-message" style="color: red; font-size: 12px; display: none;">Invalid Coupon Code</p>
+        </div>
+   
+
+         <!------------------------------------SMALL NOTES OF BILL-------------------------------------------->
+
+        <div style="float: left;"> 
+        <p>  Rates are quoted in Canadian dollars.  Taxes and/or property-imposed fees of approximately
+         CA $8.85   will be collected by the property in Euros (€5.90). 
+        Taxes and/or fees due at the property are based on current exchange rates, 
+        which may vary  at the time of travel. Your card issuer may charge a foreign transaction
+         fee for taxes and/or fees paid at the property.</p>
+
+        </div>
+    </fieldset>
+    </div> 
+    
+
+
+
+
+
+
+
+
+
+      <!--------------------------------------------------------THIRD FIELDSET --------------------------------------------->
+      <div style="float: left;">
+        <fieldset style="border: 2px solid black; width: 400px; height: 600px;"> 
+    
+            <!--------------------------------------------------------HEADING---------------------------------------------> 
+            <div> 
+                <p style=" font-size: 23px; font-weight: bold;"> The Continental Hotel</p>
+                <hr> 
+                <p style=" font-size: 23px; font-weight: bold; text-align: center;"> Your Booking </p>
+    
+                <!--------------------------------------------------------YOUR BOOKED ROOM  ---------------------------------------------> 
+                <div style="font-size: 13px;"> 
+                    <!-- Dynamic Image for Room -->
+                    <img id="room-image" 
+                         src="Images/Presidenal-suit-living-room.avif" 
+                         alt="Room Image" 
+                         width="300px" 
+                         height="200px" 
+                         style="border: 1px solid black;">
+                    
+                    <!--------------------------------------------------------YOUR BOOKED ROOM DESCRIPTION---------------------------------------------> 
+                    <p style="color: #616161;"> 
+                        <b> 1 Room: </b> 
+                        <span id="room-type"> Presidential Suite, 1 King Bed</span> 
+                        <br> 
+                        <b>Check-in:  </b> 
+                        <span id="check-in-date">Choosen date</span> 
+                        <br> 
+                        <b>Check-out:  </b> 
+                        <span id="check-out-date">As per stay</span> 
+                    </p> 
+                    <hr> 
+                    <p style="color: #616161;"> 
+                        <b>Special Requests</b> 
+                    </p> 
+                    <p id="special-requests" style="color: #616161;">None</p>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    
+  <!--------------------------------------------------------THIRD FIELDSET COMPLETE--------------------------------------------->
+
+  <div style="clear: both;"></div>
+  <BR> 
+
+
+    <!--------------------------------------------------------FUNCTIONAL BUTTON TO MAKE A PAYMENT --------------------------------------------->
+   <!-- Complete Booking Button -->
+<div style="text-align: center; margin-top: 20px;">
+    <button id="complete-booking-button" type="submit" class="complete-booking-button">Complete Booking</button>
+</div>
+
+    
+</form>
+
+
+<br> 
+<br> 
+<!-- ------------- FOOTER SECTION ------------- -->
+<footer id="hobby-footer">
+    <ul>
+        <li><a href="#">ABOUT CONTINENTAL</a></li>
+        <li><a href="#">HOLIDAYS</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">EVENTS VENUE</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">FEEDBACK</a></li>
+        <li><a href="#">CUSTOMER SERVICE</a></li>
+        <li><a href="#">LOST AND FOUND</a></li>
+    </ul>
+
+    <p style="font-size: larger;">&copy; All rights reserved.</p>
+    </footer>
+
+    <script src="Hotel-Payment.js"> </script>
+    </body>
+    </html>

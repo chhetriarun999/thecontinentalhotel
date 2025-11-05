@@ -1,0 +1,414 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Final-exam"> 
+        <meta name="keywords" content="HTML, CSS ">
+        <meta name="author" content="ME">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+         Final-Exam
+        </title>
+        <head> 
+            <link rel="icon" href="............." type="image/png">
+            <link rel="stylesheet" href="........" type="text/css"> 
+            
+            
+            <style>
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    /*Header*/ 
+    .header {
+    background-color: #f8f8f8;
+    width: 100%;
+    position:fixed;
+   
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.title{
+    font-size: 58px; 
+    font-weight: bold;
+    color: #5b041b; 
+    margin-left: 10px;
+    
+}
+
+.header .logo {
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+.nav {
+    float: right;
+    clear: both;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    line-height: 120px;
+}
+
+.nav ul li a:hover {
+    color: red;
+}
+
+
+/*Dropdown*/
+.dropdown{
+display: none;
+position: fixed;
+background-color: #f8f8f8;
+box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+list-style: none;
+min-width: 200px;
+z-index: 1;
+} 
+
+.dropdown li{
+    display: inline-block;
+    padding: 3px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.dropdown li a:hover{
+    background-color: grey;
+    
+}
+
+.nav ul li:hover .dropdown {
+    display: block;
+}
+
+/*grid system*/
+.wrapper{
+            display: grid;
+            grid-template-columns: 500px 200px 30% 20%;
+            gap:1em 0.5em;
+            /* column-gap:1em;*/
+            margin-top: 10%;
+        }
+        
+        .wrapper > div{
+            background: rgb(255, 255, 255);
+            padding: 1em;;
+        }
+
+        .wrapper>div:nth-child(odd){
+            background: rgb(253, 253, 253);
+        }   
+
+
+        .wrapper>div:nth-child(4){
+            grid-row: span 3;
+        }
+        
+
+        .simple-text {
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+         /* 3px right, 3px down, 5px blur, shadow color */
+        }
+
+
+
+        
+.Body-article{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hobby-section{
+    float: left;
+    margin-left: 8%;
+    color: black;
+}
+.paragraph-heading{
+    color: blue;
+}
+
+
+/*************************************Clearfix*************************************/
+.clearfix::after{
+    content:" ";
+    clear:both;
+    display:block;
+}
+
+/*************************************Aside*************************************/
+.hobby-aside{
+    float: right;
+    width:200px;
+    height: 800px;
+    background-color: transparent;
+    color: goldenrod;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-right: 2%;
+}
+
+.hobby-aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.hobby-aside ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header list elements */
+.hobby-aside ul li{
+    padding: 10px 20px;
+}
+/* Aside elements hover effect*/
+.hobby-aside ul li a:hover{
+color: blue;
+}
+
+
+
+
+
+.footer{
+    position: static;
+    display: block;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: blue;
+    
+}
+
+
+.footer ul li a{
+ padding: 10px 20px;
+ text-decoration: none;
+ color: black;
+line-height: 80px;
+}
+
+.footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer li{
+    display: inline;
+}
+
+.footer ul li a:hover{
+    color: blue;
+    }
+
+
+            </style>
+        </head>
+        <body> 
+
+<!----header-->
+<header class="header"> 
+    <div class="container">
+        <div style="display: flex; align-items: center;">
+            <img src="..............." class="logo" alt="Logo">
+            <div class="title">organization</div>
+        </div>
+        <nav class="nav">
+            <ul> 
+                <li><a href="#">HOME</a>
+                    <ul class="dropdown">
+                        <li><a href="#"> Locations</a></li> 
+                        <li><a href="#"> Company Information</a></li>
+                        <li><a href="#"> Product Suggestation</a></li>
+                        <li><a href="#"> Events</a></li>
+                        
+                    </ul>
+                    </li>
+
+                <li><a href="#">ABOUT US</a>
+                    <ul class="dropdown">
+                        <li><a href="#"> Double Espresso </a></li> 
+                        <li><a href="#"> Latte </a></li>
+                        <li><a href="#"> Americano</a></li>
+                        <li><a href="#"> Macchiato</a></li>
+                        <li><a href="#"> Cappucciono</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav> 
+    </div>
+</header>
+
+<!---middle part-->
+<br> 
+<div class="wrapper">
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> 
+
+    </div>
+    
+    <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
+    
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+     </div>
+    
+     <div>  
+        hhhhhhhh<br> 
+        hhhhhhhh<br> 
+        hhhhhhhh<br> 
+        hhhhhhhh<br> 
+      
+        
+     </div>
+</div>
+<br> 
+
+<h1 class="simple-text" >Hello, World!</h1>
+
+
+<!---middle part-->
+
+<section class="clearfix">
+    <section class="hobby-section"> 
+        <div class="Body-article"> 
+<article> 
+    <br> 
+   <b>  Types of Chess: </b>
+ <br> 
+ <br> 
+    <ul> 
+        <li><b class="paragraph-heading"> Classical: </b><br> 
+            Classical chess, also known as standard chess <br>  or slow chess, 
+            is a time control where each player has a <br> significant amount 
+            of time to make all of the moves, usually at least one hour. </li>
+            <br> 
+        <li> <b class="paragraph-heading"> Blitz: </b> <br> 
+            Blitz chess (more commonly known as speed chess)<br> simply refers
+            to a game of chess that has a fast time control. <br>Speed chess is
+            fun to watch and to play. It has been<br> suggested that the faster
+            a time control is, the lower the quality of the game.</li>
+            <br> 
+        <li> <b class="paragraph-heading"> Bullet:</b><br>  Bullet chess is a variant of blitz chess. According to <br> 
+            FIDE, blitz chess is anything that has 10 minutes or less per <br>player. USCF  
+            has designated that blitz chess time controls are <br> between five and 10 
+            minutes per player. Bullet chess is faster than blitz chess! </li>
+    </ul>
+</article>
+</div>
+<br> 
+<!-----------------------Article------------------>
+<div class="Body-article clearfix" >
+<article> 
+    <b class="paragraph-heading">Equipments Needed:</b><br>
+    <br> 
+    <ul> 
+        <li> Chess Board</li>
+        <li> Chess Pieces</li>
+        <li> Chess Clock</li>
+        <li> Score Sheet</li>
+    </ul>
+
+    <br> 
+    <div class="video-container"> 
+        <video controls autoplay loop>
+            <source src="#" type="Video/mp4">
+            Your Browser does not support the video tag
+        </video>
+    </div>
+
+    <div class="image-map"> 
+        <img src="#" alt="Hotel-room" width="340px" height="200px" usemap="#King-Room">
+        <map name="King-Room">
+            <area shape="rect" coords="0,0,350,200" href="#" alt="King-Room" >
+         </map>
+
+</article>
+</div>
+</section>
+<!-----------------------Aside------------------->
+<aside class="hobby-aside clearfix"> 
+<b> Resources: </b>
+<ul> 
+<li> <a href="#"> Home</a></li>
+<li> <a href="#"> chess.com</a></li>
+<li> <a href="#"> Youtube</a></li>
+<li> <a href="#"> Past games</a></li>
+<li> <a href="#"> Shorts</a></li>
+<li> <a href="#"> Subscriptions</a></li>
+<li> <a href="#"> Liked Games</a></li>
+<li> <a href="#"> Playlist</a></li>
+<li> <a href="#"> Learning</a></li>
+<li> <a href="#"> Subscriptions</a></li>
+<li> <a href="#"> Sports</a></li>
+<li> <a href="#"> Podcast</a></li>
+<li> <a href="#"> Music</a></li>
+<li> <a href="#"> Gaming</a></li> 
+</ul>
+</aside>
+</section>
+
+
+
+
+<footer class= "footer" >
+    <ul>
+        <li> <a href="#"> Office</a></li>
+        <li><a href="#"> Market </a></li>
+        <li> <a href="#"> Policies </a></li>
+        <li> <a href="#"> Aggrement </a></li>
+        <li> <a href="#"> Contact </a></li>
+    </ul>
+    <p> &copy All rights reserved.</p>
+    <br> 
+</footer>
+
+
+
+
+
+
+</body>
+</html> 

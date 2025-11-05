@@ -1,0 +1,125 @@
+
+<!-------------------------------------------------------------------------------------
+Hotel-booked-message.html
+Arun Chhetri (T00722321)
+Fist Website Designing Assignment:   The Continental Hotel 
+
+This page conforms the booking of room in the continential hotel.
+--------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation </title>
+    <link rel="icon" href="Images/Contential-logo.jpg" type="image/png">
+    <link rel="stylesheet" href="rooms.css" type="text/css"> 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        .glass-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(145deg, #e0e0e0, #f5f5f5);
+        }
+
+        .confirmation-box {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            padding: 40px 60px;
+            width: 400px;
+            text-align: center;
+            color: #333;
+        }
+
+        .confirmation-box h2 {
+            font-size: 2rem;
+            color: #1668e3;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-box p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .confirmation-box span {
+            color: #1668e3;
+            font-weight: bold;
+        }
+
+        .confirmation-box button {
+            background-color: #1668e3;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .confirmation-box button:hover {
+            background-color: #134bbf;
+        }
+    </style>
+</head>
+<body>
+<!-- ------------- HEADER SECTION ------------- -->
+<header class="hobby-header"> 
+    <div class="hobby-container">
+        <div style="display: flex; align-items: center;">
+            <img src="Images/Contential-logo.jpg" class="hobby-logo" alt="Logo">
+            <div class="hobby-title">The Continental Hotel</div>
+        </div>
+        <nav class="hobby-nav clearfix">
+            <ul> 
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">DINING</a></li>
+                <li><a href="#">DESTINATIONS</a></li>
+                <li><a href="#">OFFERS</a></li>
+                <li><a href="#">MEMBERSHIPS</a></li>
+            </ul>
+        </nav> 
+    </div>
+</header>
+
+<div class="glass-container">
+    <div class="confirmation-box">
+        <h2>Booking Confirmation</h2> 
+        <p>Dear <span id="customer-name">Guest</span>,</p>
+        <p>Your booking at <b><span id="room-type"> The Continental Hotel</span></b> has been successfully confirmed.</p>
+        <p>We hope you have a pleasant stay at The Continental Hotel. Enjoy your stay!</p>
+        <button id="go-home" onclick="window.location.href='Hotel-main-page.html'">Back to Home</button>
+    </div> 
+</div>
+
+ <!-- ------------- FOOTER SECTION ------------- -->
+ <footer id="hobby-footer">
+    <ul>
+        <li><a href="#">ABOUT CONTINENTAL</a></li>
+        <li><a href="#">HOLIDAYS</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">EVENTS VENUE</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">FEEDBACK</a></li>
+        <li><a href="#">CUSTOMER SERVICE</a></li>
+        <li><a href="#">LOST AND FOUND</a></li>
+    </ul>
+
+    <p style="font-size: larger;">&copy; All rights reserved.</p>
+</footer>
+</body>
+</html>

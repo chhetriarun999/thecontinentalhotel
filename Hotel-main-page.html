@@ -1,0 +1,317 @@
+<!-------------------------------------------------------------------------------------
+Hotel-main-page.html
+Arun Chhetri (T00722321)
+Fist Website Designing Assignment. 
+
+This is a website of a Hotel Name: The Contential Hotel, located in Kamloops, British Columbia, Canada. 
+This hotel offers various services such as: Stay, Dinning, Wellness, Transportation, etc. 
+--------------------------------------------------------------------------------------->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a lab exercise on HTML Assignment 2 section 2"> 
+        <meta name="keywords" content="HTML, CSS ">
+        <meta name="author" content="Arun Chhetri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+            The Continental Hotel
+        </title>
+
+        <link rel="icon" href="Images/Contential-logo.jpg" type="image/png">
+        <link rel="stylesheet" href="Hotel-main-page.css" type="text/css"> 
+    </head>
+    <body> 
+        
+    <header class="hobby-header"> 
+                <div class="hobby-container">
+                    <img src="Images/Contential-logo.jpg" class="hobby-logo" style="border: none;">
+                    
+                    <nav class="hobby-nav clearfix">
+                        <ul> 
+                            <li> <a href="#"> HOME</a></li>
+                            <li><a href="#">DINNING </a></li>
+                            <li> <a href="#">DESTINATIONS </a></li>
+                            <li> <a href="#"> OFFERS</a></li>
+                            <li> <a href="#"> MEMBERSHIPS</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </header>
+           
+            <div id="Hotel-Name"> 
+                <p>The Continental Hotel</p>
+            </div>
+        
+       
+
+<!-------------------------------------------------------SUB-HEADING ---------------------------------------------------->
+        <div style="margin: 5px; background-color: #eeeeee;" > 
+        <h1 style="text-align: center; margin: 0%; border-bottom: 0%; padding-bottom: 0%; color: black;"> Global Icon of Canadian Hospitality</h1>
+        <p style="text-align: center;"> 
+            Step into a world of timeless elegance, where every corridor tells a story and opulence knows no bounds.
+            <br style="text-align: center;">  Surrender to the pinnacle of sophistication at our magnificent palaces, lavish hotels, exclusive resorts, and bespoke safaris, 
+            <br style="text-align: center;">each promising an  unparalleled journey of indulgence and splendor.</p>
+        </div>
+       
+        <br> 
+       
+      <!-------------------------------------------------------ROOM BOOKING FORM CONNECTED TO PAYMENT ---------------------------------------------------->
+
+      <div style="float: left; width: 21%; margin-bottom: 2px; height:fit-content ;"> 
+        <form id="form" action="Hotel-Payment.html" method="get">
+            <fieldset> 
+                <legend> 
+                    <h4>Book A Stay</h4>
+                </legend>
+    
+                <div style="margin-bottom: 10px;"> 
+                    <b> Date of Stay: </b>
+                    <input type="date" name="date" max="2025-12-30" min="2024-10-09" required>
+                </div>
+    
+                <b>Length of Stay:</b>  
+                <div style="margin-top: 10px;">
+                    <input type="number" name="days" max="10" min="1" required placeholder="Days">
+                    <input type="number" name="nights" max="10" min="1" required placeholder="Nights">
+                </div>
+    
+                <div style="margin-top: 10px;"> 
+                    <input type="number" name="adults" max="10" min="1" required placeholder="Adults">  
+                    <input type="number" name="children" max="10" min="1"  placeholder="Children"> 
+                </div>
+    
+                <br>
+                <b>Type of Rooms:</b>
+                <br> 
+                <input type="radio" name="roomtype" value="King" id="King" required>
+                <label for="King">King Room</label>
+                <br> 
+                <input type="radio" name="roomtype" value="Queen" id="Queen">
+                <label for="Queen">Queen Room</label>
+                <br>
+                <input type="radio" name="roomtype" value="PSuit" id="PSuit">
+                <label for="PSuit">Presidential Suite</label>
+                <br>
+           
+                <br> 
+                <b>Special Requests:</b>
+                <textarea name="requests" placeholder="Enter your special requests here"></textarea>
+    
+                <br> 
+                <input type="submit" value="Book Now" class="book-now-btn">
+            </fieldset>
+        </form>
+    </div> 
+    
+    
+
+   <!-------------------------------------------------------BOOK A STAY MIDDLE TEXT ---------------------------------------------------->
+   <div class="book-stay-container"> 
+    <p class="book-stay-text">
+        <b>
+            <span class="book-stay-title">BOOK A STAY</span>
+            <br>
+            <span class="book-stay-subtitle">WITH US</span>
+        </b> 
+    </p> 
+</div>
+
+<!-------------------------------------------------------PRESIDENTAL SUIT TOUR VIDEO---------------------------------------------------->
+    
+     
+<div class="video-container"> 
+    <video controls autoplay loop>
+        <source src="Videos/Presidential Suite Tour _ Atlantis, The Palm.mp4" type="Video/mp4">
+        <source src="Videos/Presidential Suite Tour _ Atlantis, The Palm.mp4" type="Video/ogg">
+        Your Browser does not support the video tag
+    </video>
+</div>
+
+<div class="clearfix"></div>
+       
+<div class="welcome-message">
+    <p>Welcome to a sanctuary that seamlessly blends Nepalese heritage healing with serene contemporary comforts for the mind, body, and soul.</p>
+</div>
+<br> 
+
+            <!-------------------------------------------------------LINE---------------------------------------------------->
+       <hr style="height:2px;border-width:0;color:gray;background-color:gray; padding-top: 0%; margin-top: 2px;">
+
+<!-------------------------------------------------------SERVICES TITLE---------------------------------------------------->
+            <h1 style="text-align: center;"> Hotel Services</h1>
+      
+
+            <!-------------------------------------------HOTEL SERVICES IMAGES PORTFOLIO---------------------------------------------------->
+           
+            <!-------------------------------------------------------kING ROOM ---------------------------------------------------->
+        <div class="row"> 
+            <div class="Column"> 
+                <div class="Content"> 
+                    <img src="Images/King-Room.jpg" alt="Hotel-room" width="340px" height="200px" usemap="#King-Room">
+                    <map name="King-Room">
+                        <area shape="rect" coords="0,0,350,200" href="King-Room.html" alt="King-Room" >
+                     </map>
+                    <h3> King-Room </h3>
+                    <p> A luxurious king room offers a king-sized bed, stylish seating, a large TV, high-speed Wi-Fi, and a minibar.
+                         The bathroom features a soaking tub, rainfall shower, and premium toiletries, providing a perfect mix of comfort and elegance.</p>
+                </div>
+            </div>
+            
+
+            <!-------------------------------------------------------QUEEN ROOM --------------------------------------------------->
+            <div class="Column">
+                <div class="Content"> 
+                    
+                    <img src="Images/Queen.jpg" alt="hotel-logo" width="340px" height="200px" usemap="#Queen-Room">
+                    <map name="Queen-Room">
+                        <area shape="rect" coords="0,0,340,200" href="Queen-Room.html" alt="Queen-Room">
+                    </map>  
+                    <h3> Queen-Room</h3>
+                    <p> A luxurious queen room with two beds offers plush queen-sized mattresses, a cozy seating area, a flat-screen TV, and high-speed Wi-Fi. 
+                        The bathroom includes a walk-in shower and premium toiletries, creating a comfortable and elegant stay.</p> 
+                </div> 
+            </div>
+
+            <!-------------------------------------------------------PESIDENTAL SUIT---------------------------------------------------->
+
+            <div class="Column"> 
+                <div class="Content">
+                   
+                    <img src="Images/Presidenal-suit-living-room.avif" alt="Presidental Suit" width="340px" height="200px" usemap="#Presidental-Suit">
+                   <map name="Presidental-Suit">
+                    <area shape="rect" coords="0,0,350,200" href="Presidental-Suit.html" alt="Presidental-Suit Room">
+                   </map>
+                    <h3>Presidental Suit</h3>
+
+                    <p>Our duplex penthouse experience marries innovative design with commanding views. 
+                    A luxurious King bed, a cozy seating area and high-speed Wi-Fi. 
+                    The bathroom includes a bath-tub and premium toiletries, creating a comfortable and elegant stay. </p>
+                    </div>
+            </div>  
+
+
+            <!------------------------------------------------------SWIMMING POOL-------------------------------------------------->
+
+
+            <div class="Column"> 
+                <div class="Content">
+                    
+                    <img src="Images/Swimming-pool.jpg" alt="Swimming-pool" width="340px" height="200px" usemap="#pool">
+                    <map name="pool">
+                        <area shape="rect" coords="0,0,350,200" href="https://www.kwindpool.ca/" alt="Pool">
+                       </map>
+                    <h3>Infinity Pool</h3>
+
+                    <p> 
+                        A luxurious infinity pool offers stunning horizon views with premium lounge seating and private cabanas.
+                        Five-star amenities include towel service, poolside drinks, and refreshing treats for a truly relaxing experience.</p>
+                    </div>
+            </div>  
+        </div>
+       
+       
+
+
+
+        <!-------------------------------------------------------2ND ROW OF PORTFOLIO---------------------------------------------------->
+        
+        <!-------------------------------------------------------SPA SERVICE---------------------------------------------------->
+<div class="row"> 
+    <div class="Column"> 
+        <div class="Content"> 
+            <img src="Images/Spa.webp" alt="Hotel-room" width="340px" height="200px" usemap="#SPA">
+            <map name="SPA">
+                <area shape="rect" coords="0,0,350,200" href="https://littlespakamloops.com/" alt="SPA">
+               </map>
+            <h3> Spa and Wellness Facilities </h3>
+            <p>A luxurious spa offers rejuvenating treatments, skilled therapists, and serene relaxation areas.
+            Services include massages, facials, and body therapies with premium products, creating a tranquil and revitalizing experience.</p>
+        </div>
+    </div>
+
+
+    <!-------------------------------------------------------BUTLER SERVICE ---------------------------------------------------->
+    <div class="Column">
+        <div class="Content"> 
+            
+            <img src="Images/Butler.jpg" alt="hotel-logo" width="340px" height="200px" usemap="#Butler-service"> 
+            <map name="Butler-service">
+                <area shape="rect" coords="0,0,350,200" href="https://www.butlersinthebuff.com/" alt="Butler service">
+               </map> 
+            <h3> 24/7 Butler Service</h3>
+            <p> A luxurious butler service provides personalized assistance, addressing every guest need with meticulous attention.
+                From unpacking luggage to making dining reservations, the butler enhances comfort and convenience throughout the stay.</p> 
+        </div> 
+    </div>
+    
+
+    <!-------------------------------------------------------DINNING SERVICES OF HOTEL---------------------------------------------------->
+
+    <div class="Column"> 
+        <div class="Content">
+           
+            <img src="Images/food.jpg" alt="morning-breakfast" width="340px" height="200px" usemap="#Restaurant">
+            <map name="Restaurant">
+                <area shape="rect" coords="0,0,350,200" href="https://cordorestobar.com/" alt="Restaurant">
+               </map>
+            <h3>Dinning</h3>
+
+            <p> Embark on a journey of exquisite luxury experiences for the discerning connoisseur, 
+                seamlessly woven together with impeccable service, sophisticated ambience, world-class amenities, and masterful culinary artistry.</p>
+            </div>
+    </div>  
+
+<!-------------------------------------------------------KIDS PLAYING SERVICES---------------------------------------------------->
+
+    <div class="Column">
+        <div class="Content"> 
+            
+            <img src="Images/Kids.jpg" alt="hotel-logo" width="340px" height="200px" usemap="#Kids-sports"> 
+            <map name="Kids-sports">
+                <area shape="rect" coords="0,0,350,200" href="https://apexadventureplex.com/" alt="Kids-sports">
+               </map> 
+            <h3> Kid's Club and Family Activities</h3>
+            <p> A luxurious queen room with two beds offers plush queen-sized mattresses, a cozy seating area, a flat-screen TV, and high-speed Wi-Fi. 
+                The bathroom includes a walk-in shower and premium toiletries, creating a comfortable and elegant stay.</p> 
+        </div> 
+    </div>
+
+    <br> 
+    <footer id="hobby-footer" >
+        <ul>
+            <li> <a href="#"> ABOUT CONTENTIAL</a></li>
+            <li><a href="#"> HOLIDAYS </a></li>
+            <li> <a href="#"> OFFERS</a></li>
+            <li> <a href="#"> EVENTS VENUE</a></li>
+            <li> <a href="#"> CONTACT </a></li>
+            <li> <a href="#"> FEEDBACK </a></li>
+            <li> <a href="#"> CUSTOMER SERVICE </a></li>
+            <li> <a href="#"> LOST AND FOUND </a></li>
+        </ul>
+
+        <p style="font-size:larger;"> &copy All rights reserved.</p>
+        <br> 
+    </footer>
+
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const roomType = urlParams.get('roomtype');
+    
+        // Check if the room type is present in the URL
+        if (roomType) {
+            // Pre-select the room type radio button
+            const radioButton = document.getElementById(roomType);
+            if (radioButton) {
+                radioButton.checked = true;
+            }
+        }
+    </script>
+    
+
+
+</div>
+</body>
+</html>

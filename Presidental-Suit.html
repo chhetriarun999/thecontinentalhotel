@@ -1,0 +1,303 @@
+<!-------------------------------------------------------------------------------------
+Presidental-Suit-Room.html
+Arun Chhetri (T00722321)
+Fist Website Designing Assignment:   The Continental Hotel 
+
+This page offers all the services available in one Presidental-Suit Room of a Hotel. 
+--------------------------------------------------------------------------------------->
+
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Assignment 1"> 
+        <meta name="keywords" content="HTML, CSS ">
+        <meta name="author" content="Arun Chhetri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+        Presidental-Suit Room- The Continental Hotel 
+        </title>
+        <link rel="icon" href="Images/Contential-logo.jpg" type="image/png">
+        
+        <style> 
+        /*---------------------------------------------------------INTERNAL CSS---------------------------------------------   */
+
+        /*-------------------------------------------INERNAL CSS FOR 4 IMAGE PORTFOLIO IN A ROW---------------------------------------------   */
+   .row {
+        padding: 0px;
+        }
+        .Column {
+            float: left;
+            width: 24%; 
+        }
+        .Content {
+            background-color:white;
+            padding: 10px; 
+        }
+/*---------------------------------------------------------INTERNAL CSS FOR GROUP PICTURES OF ROOM--------------------------------------------   */
+
+        .suit{
+            margin-top: 2px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            margin-right: 2px;
+            border: 2px solid black;
+
+  /*--------------------------------------------------------INTERNAL CSS FOR ADDING TICK AS A LIST STYLE TYPE--------------------------------------------   */
+        }
+       .ticks ul li:before{
+            content: '✓';
+        }
+
+        </style>
+        <link rel="stylesheet" href="rooms.css" type="text/css"> 
+        </head>
+
+        <body> 
+    
+        <!---------------------------------------------------------BODY--------------------------------------------->
+
+        <header class="hobby-header"> 
+            <div class="hobby-container">
+                <div style="display: flex; align-items: center;">
+                    <img src="Images/Contential-logo.jpg" class="hobby-logo" alt="Logo">
+                    <div class="hobby-title">The Continental Hotel</div>
+                </div>
+                <nav class="hobby-nav clearfix">
+                    <ul> 
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">DINING</a></li>
+                        <li><a href="#">DESTINATIONS</a></li>
+                        <li><a href="#">OFFERS</a></li>
+                        <li><a href="#">MEMBERSHIPS</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </header>
+
+
+
+
+
+        
+        <!---------------------------------------------------------BACKGROUND IMAGE ON TOP --------------------------------------------->
+        <img src="Images/Presidenal-suit-background.jpg" width="1500" height="574.2"> 
+
+        
+        
+        <!--------------------------------------------------------MAIN HEADING------------------------------------------->
+            <div>
+           <h1 style="font-size: 60Px; text-align: center; margin-bottom: 0%; margin-top: 5%; "> Presidental Suit</h1>
+        </div>
+        
+        <!---------------------------------------------------------SUB HEADING--------------------------------------------->
+        <div> 
+          <p style="text-align: center; margin-top: 0%; padding-top: 0%; margin-bottom: 10%;"> Our duplex penthouse experience marries innovative design with commanding views. </p>
+        </div>
+
+      
+
+        <!--------------------------------------------------SERVICES OF HOTEL------4 IMAGES PORTFOLIO IN A ROW----------------------------------------->
+        <div class="row"> 
+            <div class="Column"> 
+                <div class="Content"> 
+                    <img src="Images/Checkin-presidential-suite.avif" alt="Hotel-room" width="340px" height="200px" usemap="#King-Room">
+                    <map name="King-Room">
+                        <area shape="rect" coords="0,0,350,200" href="King-Room.html" alt="King-Room" >
+                     </map>
+                    <h3> Seamless arrival</h3>
+                    <p> check-in from the confort of your suit.</p>
+                </div>
+                </div>
+
+
+        <!--------------------------------------------------------ANOTHER SECTION-------------------------------------------->
+                <div class="row"> 
+                    <div class="Column"> 
+                        <div class="Content"> 
+                            <img src="Images/two-floorpresidential-suite.avif" alt="Hotel-room" width="340px" height="200px" usemap="#King-Room">
+                            <map name="King-Room">
+                                <area shape="rect" coords="0,0,350,200" href="King-Room.html" alt="King-Room" >
+                             </map>
+                            <h3> Two floors of contemporary living space</h3>
+                            <p> Unwind in this exceptional, light-filled space with sweeping views.</p>
+                        </div>
+                        </div>
+
+        <!---------------------------------------------------------ANOTHER SECTION------------------------------------------->
+
+                        <div class="row"> 
+                            <div class="Column"> 
+                                <div class="Content"> 
+                                    <img src="Images/The-club-presidential-suite.avif" alt="Hotel-room" width="340px" height="200px" usemap="#King-Room">
+                                    <map name="King-Room">
+                                        <area shape="rect" coords="0,0,350,200" href="King-Room.html" alt="King-Room" >
+                                     </map>
+                                    <h3> Delightful indulgences at The Club</h3>
+                                    <p> Enjoy afternoon tea and canapés at sunset.</p>
+                                </div>
+                                </div>
+    
+        <!--------------------------------------------------------ANOTHER SECTION --------------------------------------------->
+
+                                <div class="row"> 
+                                    <div class="Column"> 
+                                        <div class="Content"> 
+                                            <img src="Images/Elcusive-pool-presidental-suit.jpg" alt="Hotel-room" width="340px" height="200px" usemap="#King-Room">
+                                            <map name="King-Room">
+                                                <area shape="rect" coords="0,0,350,200" href="King-Room.html" alt="King-Room" >
+                                             </map>
+                                            <h3> Exclusive Executive Pool access</h3>
+                                            <p> Bask in the Dubai sun under the shade of a tranquil cabana.</p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                          
+                                    
+        <!--------------------------------------------------------WORKING BUTTON TO BOOK PRESIDENAL SUIT--------------------------------------------->
+        <a href="Hotel-main-page.html?roomtype=PSuit#form">
+            <div style="display: block; text-align: center;"> 
+            <input type="button" value="Book Now" class="book-now-btn"> 
+        </div></a>
+                    <hr> 
+
+<!--------------------------------------------------------PICTURES OF ROOM IN ALBUM FORMAT--------------------------------------------->
+                    <div  style="float:left"> 
+                        <img src="Images/Presidental-suit-bathroom.avif" alt="living-room" width="684px" height="447px"
+                        style="border: 2px solid black ;">  
+                    </div>
+                    
+<!--------------------------------------------------------ANOTHER IMAGE--------------------------------------------->
+                    <div class="suit" style="float:left"> 
+                        <img src="Images/Presidental-suit-bed.avif" alt="living-room" width="324px" height="216px"  >
+                    </div>
+
+<!--------------------------------------------------------ANOTHER IMAGE --------------------------------------------->
+                    <div class="suit" style="float:left"> 
+                        <img src="Images/Presidental-suit-tv-room.avif" alt="living-room" width="324px" height="216px" >
+                    </div>
+
+<!--------------------------------------------------------ANOTHER IMAGE --------------------------------------------->
+                    <div class="suit" style="float:left"> 
+                        <img src="Images/presidental-suit-vase.avif" alt="living-room" width="324px" height="216px" >
+                    </div>
+<!--------------------------------------------------------ANOTHER IMAGE --------------------------------------------->
+                    <div class="suit" style="float:left"> 
+                        <img src="Images/Presidenal-suit-living-room.avif" alt="living-room" width="324px" height="216px">
+                    </div>
+                    <div style="clear: both; margin-bottom: 25PX;"> </div>
+
+
+<!--------------------------------------------------------DETAILS AND SERVICES OF ROOM --------------------------------------------->
+                    <div> 
+                      <U> <P style="text-align: center; font-size: 32px;">Room Details  </p> </U>  
+                    </div>
+                    <p style="font-family: Bressay Display, Old Standard TT, serif; font-size: 24px; 
+                    padding-bottom: 0%; margin-bottom: 0%; margin-left: 15%;"  >At a glance </p>
+                    <hr style="margin-top: 0%; border: 2px solid grey;"> 
+
+ <!---------------------------------------------------------3 LOGOS AND DESCRIPTON INSIDE INVISIBLE TABLE---------------------------->
+                    <div> 
+                        <table  cellpadding="50" align="center" style="margin-left:25% ;"> 
+                            <tr> 
+                                <th style="font-size: 20px;"> 
+                                    Max.Capacity
+                                </th>
+            
+                                <th style="font-size: 20px;">
+                                   Size
+                                </th>
+                                <th style="font-size: 20px;">
+                                  Bed Type
+                                </th>
+                            </tr>
+                            <tr> 
+                                <td> <img src="Images/icon-person.jpg" height="40" width="40" style="vertical-align: middle;"> <span style="font-size: 20px;" >2 Adults </span>  </td>
+                                <td> <img src="Images/angle-scale.webp" height="49" width="49" style="vertical-align: middle;"> 28m<sup>2</sup>/300ft<sup>2</sup></td>
+                                <td> <img src="Images/bed-logo.png" height="49" width="49" style="vertical-align: middle;"> King Bed</td>
+                            </tr>
+                        </table>
+                    </div>
+
+<!-------------------------------------------------------OTHER SERVICES OF ROOM  --------------------------------------------->
+
+
+                    <div> 
+                    <p style="font-family: Bressay Display, Old Standard TT, serif; font-size: 24px; 
+                    padding-bottom: 0%; margin-bottom: 0%; margin-left: 15%;"  >Amenities </p>
+                 
+                    </div>
+                    <div style="margin-top: 1%; margin-left: 400px; float: left;" class="ticks" > 
+                        <ul style="list-style-type:none; padding:5px "> 
+                            <li> In-suite check-in from 15:00</li>
+                            <li>Happy hour at The Family Club or The Sunset Club </li>
+                            <li>Unlimited entry to Wild Wadi Waterpark™ </li>
+                            <li> Four stunning swimming pools</li>
+                            <li> Access to Talise Spa and The J Club </li>
+                            <li> Exclusive bathroom amenities</li>
+                            <li>Complimentary Wi-Fi </li>
+                        </ul>
+                    </div>
+
+<!--------------------------------------------------------DETAILS AND SERVICES OF ROOM --------------------------------------------->
+                    <div  style="margin-top: 1%; float: left; margin-left: 100px;" class="ticks" > 
+                        <ul style="list-style-type:none; padding:5px"> 
+                            <li>Exclusive benefits with access to The Club </li>
+                            <li>Premium entry to The Executive Pool Club </li>
+                            <li> Access to Jumeirah's two-kilometer pristine private beach</li>
+                            <li>Complimentary access to KiDS Club for younger guests </li>
+                            <li>Separate walk-in shower and bath </li>
+                            <li>Widescreen interactive HD LCD TV </li>
+                        </ul>
+                    </div>
+
+<!--------------------------------------------------------DETAILS AND SERVICES OF ROOM --------------------------------------------->
+                    <div style="clear: both;"> </div>
+                    <div> 
+                        <p style="font-family: Bressay Display, Old Standard TT, serif; font-size: 24px; 
+                        padding-bottom: 0%; margin-bottom: 0%; margin-left: 15%;" >Hilights </p>
+                         
+                        </div>
+
+                        <div  style="margin-top: 1%; float: left; margin-left: 400px;" class="ticks"> 
+                            <ul style="list-style-type:none; padding:5px"> 
+                                <li>Coffee and tea making facilities </li>
+                                <li> In-room security safe</li>
+                                <li> Hairdryer</li>
+                                <li> Baby cots (available on request)</li>
+                            </ul>
+                        </div>
+<!--------------------------------------------------------DETAILS AND SERVICES OF ROOM --------------------------------------------->
+                        <div  style="margin-top: 1%; float: left; margin-left: 220px;" class="ticks"> 
+                            <ul style="list-style-type:none; padding:5px"> 
+                                <li> Complimentary access to e-newspapers</li>
+                                <li> Minibar</li>
+                                <li> Ironing facilities</li>
+                            </ul>
+                                </div>
+                                 <div style="clear: both;"> </div>
+                                
+
+ <!--------------------------------------------------------WORKING BUTTON TO BOOK PRESIDENAL SUIT--------------------------------------------->
+                                
+ <a href="Hotel-main-page.html?roomtype=PSuit#form">
+    <div style="display: block; text-align: center;"> 
+    <input type="button" value="Book Now" class="book-now-btn"> 
+</div></a>
+<!-- ------------- FOOTER SECTION ------------- -->
+<footer id="hobby-footer">
+    <ul>
+        <li><a href="#">ABOUT CONTINENTAL</a></li>
+        <li><a href="#">HOLIDAYS</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">EVENTS VENUE</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">FEEDBACK</a></li>
+        <li><a href="#">CUSTOMER SERVICE</a></li>
+        <li><a href="#">LOST AND FOUND</a></li>
+    </ul>
+
+    <p style="font-size: larger;">&copy; All rights reserved.</p>
+</footer>
+        </body>
+        </html>

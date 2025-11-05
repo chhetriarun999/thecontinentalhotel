@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a lab exercise on HTML Assignment 3"> 
+        <meta name="keywords" content="HTML">
+        <meta name="author" content="Arun Chhetri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+            HTML Form
+        </title>
+    </head>                                                                                                                                                                                          
+    <Body>
+            <form action="login.js" method ="get">
+                <!-- name tag takes value from user and text is stored under the name -->
+                 <!-- always give name to all input  -->
+               
+                <fieldset> 
+              <legend style="text-align: center;" ><h2>Personal Info</h2> </legend>
+
+
+                 <div>   Name: <input type ="text" name="Name" size="30" placeholder="Enter Your Name" maxlength="5" autocomplete="on"  > <br>                                                   
+                 </div>
+                 <div> <label> 
+                Password: <input type="password" name="Password" size="30" placeholder="Enter Your Password" maxlen  gth="5" autocomplete="on"  > </div>
+                EmailL: <input type="email" name="Email" size="30" placeholder="Email"> <br> 
+            </label>
+
+            <!---you can change the paragraph inside  a new div tag in place of br tag -->
+            <label>
+                Contact Number: <input type="tel" name="Contact" placeholder="contact"><br> 
+            </label>
+         
+            Date of Birth: <input type="date" name="date of Birth" max="2020-01-01" min="1990-01-01"> <br> 
+            Time of Birth: <input type="time" name="time of birth"> <br> 
+            Choose your fav color: <input type="color" name="color"> <br> 
+            
+    
+            <input type="checkbox" name="courses" id="web"> <label for="web">  Web Programming </label> <br> 
+            <input type="checkbox"name="courses" id="Computer"> <label for ="Computer"> Computer Programming </label>  <br> 
+            <input type="checkbox" name="courses" id="Networks"> <label for ="Networks"> Computer Networks</label> <br>
+            <br> 
+          
+              
+            Choose your Gender:<br> 
+            <!-- value is inputed here because when we check the box the server should understand which checkbox is checked.  -->
+               <input type="radio" name="Gender" id="Male" value="Male"> <label for="Male"> Male</label> <br> 
+               <input type="radio" name="Gender" id="Female" value="Female"> <label for="Female">Female</label> <br> 
+               <input type="radio" name="Gender" id="other" value="Other"> <label for="other">Other</label> <br> 
+               Upload Your resume: <input type="file"><br> 
+               <br>
+
+               </fieldset>
+<br> 
+               <fieldset> 
+                <legend style="text-align: center;"> <h2>Professional Info </h2></legend>
+               <label> Choose your Career:</label> 
+               <select name="Career"> 
+                <optgroup label="Software"> 
+                <option value="Software Engineer"> Software Engineer </option>
+                <option value="Hardware Engineer"> Hardware Engineer </option>
+                <option value="Social Media Engineer"> Social Media Engineer </option></optgroup>
+                <optgroup label="Hardware"> 
+                <option value="Hydropower Engineer" selected>Hydropower Engineer</option>
+                <option value="Software Analyst"> Software Analyst </option></optgroup>
+                   
+                
+                
+               
+                    <br>
+               <input type="checkbox" name="Signup" checked ="checked" disabled> Sign up for Newsletter
+               
+                Choose your salary expectation:<span> 60000 </span><input type="range" name="salary" max="40000" min="10000"> <span> 120000 </span><br> 
+                    
+               <br> 
+                <textarea placeholder=      "Tell us about yourself" rows="10" cols="60"></textarea>
+                <br> 
+    <br> 
+        <input type="reset">
+        <input type="submit" value="Login">
+   
+         Check the courses: 
+         
+
+        </fieldset>
+            </form>
+
+
+
+
+        </Body>
+        </html>
+
+

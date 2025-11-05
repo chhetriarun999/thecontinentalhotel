@@ -1,0 +1,182 @@
+<!-------------------------------------------------------------------------------------
+FormAssignment.html
+Arun Chhetri (T00722321)
+Lab Assignment: 4 
+
+The pupose of the lab  is to explore a variety of HTML elements while ensuring that
+each form field can be submitted and processed correctly on the server side
+--------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a lab exercise on HTML Assignment 3"> 
+        <meta name="keywords" content="HTML">
+        <meta name="author" content="Arun Chhetri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+            HTML - Seminar Session 4
+        </title>
+
+
+    
+
+    </head>       
+    
+
+    <Body style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;" background="Images/table 2.avif">
+        <form action="" method="post" target="_blank"> 
+
+        <!-------------------------------------------------Main Heading (fieldset) ----------------------------------------------------------->
+        <fieldset> <legend style="text-align: center;"><h1>Conference Registeration Form</h1></Legend>
+
+        <!-------------------------------------------------Personal Information ---------------------------------------------------------->
+        <fieldset> <Legend style="text-align: center;"><h2>Personal Information</h2></Legend>
+            
+        <!------------------------------------------------- Form---------------------------------------------------------->
+            <form action="" method="post" target="_blank"> 
+
+            <div> 
+                <b>Full Name : </b> <input type="text" name="Name" size="30" placeholder="Enter your full name" autocomplete="on" required>
+            </div>
+            
+            <div> 
+                <b>Password :</b> <input type="password" name="password" size="30" placeholder="Enter your password" required>
+            </div>
+
+            <div> 
+                <b>Email :</b> <input type="email" name="email" placeholder="someone@gmail.com" autocomplete="on" required>
+            </div>
+
+            <div> 
+             
+            <b>Birthdate : </b> <input type="date" name="Birthdate" min="1995-12-30" max="2005-12-30"> 
+            </div>
+        
+            <div> 
+           <b>Meeting Time : </b>  <input type="time" name="Time">
+            </div>
+            <b>Enter Your Full Address :</b> <textarea  name="Address" placeholder="123 unit 123 McBeth Pl, V2C589, Kamloops, BC, Canada" rows="2" cols="50"></textarea>
+         <textarea > </textarea>
+        </fieldset>
+
+        
+        <!-------------------------------------------------Second Fieldset Event Preferences ---------------------------------------------------------->
+         <fieldset> <legend style="text-align: center;"> <h2> Event Preferences</h2></legend>
+
+                <div> 
+                   <b>Available Dates to Attend :</b>  
+                   <input type="radio" name="AvailableDates" id="Day1" value="Day1"> <label for="Day1"> Day 1</label> 
+                   <input type="radio" name="AvailableDates" id="Day2" value="Day2"> <label for="Day2"> Day 2</label> 
+                   <input type="radio" name="AvailableDates" id="Both" value="Both"> <label for="Both"> Both</label>                            
+                </div>  
+
+                <!------------------------------------Meal Options----------------------------------------------------->
+                  <div> 
+                   <label><b> Meal Preference :</b> </label>
+                   <select name="Meal" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    
+                    <optgroup label="Regular">
+                    <option value="Short Ribs Pizzaiola: Beef"  id="beef"> Ribs Pizzaiola: Beef </option>
+                    <option value="Honey Garlic Pork Chops" id="pork"> Honey Garlic Pork Chops</option>
+                    <option value="Sauvignon Blanc-Steamed Mussels: Sea-Food" id="sea-food"> Sauvignon Blanc-Steamed Mussels with Garlic Toast: Sea-Food</option>
+                    <option value="BBQ Spatchcock Chicken" id="chicken"> BBQ Spatchcock Chicken </option></optgroup>
+                    
+                    
+                    <optgroup label="Vegetarian">
+                    <option value="Vegetable Soup" id="Soup"> Vegetable Soup</option>
+                    <option value="Vegan Roasted Sweet Potato Salad" id="potatoSalad"> Vegan Roasted Sweet Potato Salad</option>
+                    <option value="Green Curry Buddha Bowl" id="Bowl"> Green Curry Buddha Bowl</option>
+                    <option value="Curried Cauliflower Quinoa Salad" id="QuinoaSalad"> Curried Cauliflower Quinoa Salad</option>
+                    <option value="Curried Pumpkin Soup" id="PumpkinSoup"> Curried Pumpkin Soup</option>
+                    </optgroup>
+
+                    <optgroup label="Gluten-free"> 
+                    <option value="Cacio E Pepe Sweet Potato Noodles" id="Noodles"> Cacio E Pepe Sweet Potato Noodles</option>
+                    <option value="Cheesy Chorizo, Chickpea & Crispy Rice Skillet" id="Rice"> Cheesy Chorizo, Chickpea & Crispy Rice Skillet</option>
+                    <option value="Halloumi Salad" id="HalloumiSalad"> Halloumi Salad</option>
+                    </optgroup>
+
+                    <optgroup label="No Meal"> 
+                    <option value="No Meal" id="noMeal"> No Meal</option>
+                    </optgroup>
+                    </select>
+                    </div>
+
+                    <div> 
+                        <b> Salary Expectation :</b> <span style="color: darkorange;"> Min: $ 50,000 </span> <input type="range" min="50000" max="200000"> <span style="color: darkorange;"> Max: $ 200,000 </span>
+                    </div>
+
+
+        <!--------------------------------------Checkboxes------------------------------------------->
+                    <div>
+                        <br>  
+                    <b> Interested Sessions : </b><br> 
+                    <input type="checkbox" name="Sessions" id="Web" value="Web Programming"> <label for="Web"> Web Programming</label><br> 
+                    <input type="checkbox" name="Sessions" id="Cyber" value="Cyber Security"> <label for="Cyber"> Cyber Security</label><br> 
+                    <input type="checkbox" name="Sessions" id="Machine" value="Machine Learning"> <label for="Machine"> Maching Learning </label><br> 
+                    <input type="checkbox" name="Sessions" id="Graphics" value="Graphics Designing"> <label for="Graphics"> Graphics Designing</label><br> 
+                    </div>
+
+                    <div> 
+                        <br> 
+                        <b> Future Events :</b> <br> 
+                    <input type="checkbox" name="Sessions" id="AI" value="AI"> <label for="AI"> AI</label><br> 
+                    <input type="checkbox" name="Sessions" id="Data" value="Data Science"> <label for="Data"> Data Science </label><br> 
+                    <input type="checkbox" name="Sessions" id="Cloud" value="Cloud Computing"> <label for="Cloud"> Cloud Computing </label><br> 
+                    </div>
+           
+                    </fieldset>
+
+      <!---------------------------------------------------Third Fieldset: Career Details------------------------------------->
+
+            <fieldset> <legend style="text-align: center;"> <h2> Career Details </h2></legend>
+    
+                <label style="color: green;"><b>Profession: </b>  </label>
+
+                <select name="profession"> 
+                    <optgroup label="software"> 
+                    <option value="engineer" id="en"> Arun</option>
+                </optgroup>
+
+                </select>
+                <select name="Profession" style="font-family: Arial, Helvetica, sans-serif;">
+                <optgroup label="Software"> 
+                <option value="Cloud/software architect" id="CS"> Cloud/software architect</option>
+                <option value="Front-end developer" id="F-eD"> Front-end developer</option>
+                <option value="IT coordinator" id="IC"> IT coordinator</option>
+                <option value="Network engineer" id="NE"> Network engineer</option>
+                <option value="Database report writer" id="DrW"> Database report writer</option>
+                </optgroup>
+
+                <optgroup label="Hardware">
+                <option value="Hardware Engineer" id="HE"> Hardware Engineer</option>
+                <option value="Electronic Engineer" id="EE"> Electronic Engineer </option>
+                <option value="Electrician" id="Elec"> Electrician</option>
+                <option value="Civil Engineer" id="CE"> Civil Engineer</option>
+                <option value="FireFighter" id="FFight"> FireFighter</option>
+                </optgroup>
+                </select>
+                
+                <div style="color: green;"> 
+                    <b> Upload Your Resume :</b> <input type="file" name="Resume" > 
+                </div>
+
+                <div style="color: green;"> 
+               <b>Describe about yourself : </b>  <textarea name="Description" placeholder="Any additional comments" rows="2" cols="40" maxlength="100"></textarea>
+                </div>
+
+                <!-------------------------------------------------------Submit and Reset Buttons--------------------------------------------->
+                <div> 
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit"> 
+                </div>
+               
+
+
+            </form>
+        </fieldset>
+        </fieldset>
+            
+    </Body>
+    </html>

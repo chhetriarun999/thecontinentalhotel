@@ -1,0 +1,163 @@
+/*-------------------------------------------------------------------------------------
+My-fav-hobby.css
+Arun Chhetri (T00722321)
+Lab Assignment: 6
+
+The pupose of the lab is to build a website "My Favorite Hobby" (choose a hobby, 
+like photography, cooking, hiking, etc.) and include  a header, navigation, main content sections, 
+articles, a sidebar, and a footer
+---------------------------------------------------------------------------------------*/
+
+/***********************************For all elements******************************************/
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/***********************************Header******************************************/
+.hobby-header{
+    background-color: #ffff;
+}
+
+/* Header div container */
+.hobby-container{
+    max-width: 1600px;
+    margin-left: 10%;
+   margin-right: 10%;
+}
+
+/* Header logo */
+.hobby-header .hobby-logo{
+    width: 120px;
+    height: 120px;
+}
+
+/* navigation bar */
+.hobby-nav{
+    float: right;
+}
+
+/* Header list */
+.hobby-nav ul li{
+    display: inline-block;
+    
+}
+
+/* Header list elements */
+
+.hobby-nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    line-height: 80px;
+    
+}
+/*Header elements hover effect*/
+.hobby-nav ul li a:hover{
+    color:red;
+}
+/****************************************Body***************************************/
+body{
+    background-color: bisque;
+    background-image: url(Images/chess1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Body-article{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hobby-section{
+    float: left;
+    margin-left: 8%;
+    color: white;
+}
+.paragraph-heading{
+    color: blue;
+}
+
+
+/*************************************Clearfix*************************************/
+.clearfix::after{
+    content:" ";
+    clear:both;
+    display:block;
+}
+
+/*************************************Aside*************************************/
+.hobby-aside{
+    float: right;
+    width:200px;
+    height: 800px;
+    background-color: transparent;
+    color: goldenrod;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-right: 2%;
+}
+
+.hobby-aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.hobby-aside ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header list elements */
+.hobby-aside ul li{
+    padding: 10px 20px;
+}
+/* Aside elements hover effect*/
+.hobby-aside ul li a:hover{
+color: blue;
+}
+/*************************************Footer- id Selectors*************************************/
+#hobby-footer{
+    display: block;
+    text-align: center;
+    background-color: #ffff;
+    color: blue;
+}
+
+#hobby-footer ul li a{
+ padding: 10px 20px;
+ text-decoration: none;
+ color: black;
+line-height: 80px;
+}
+
+#hobby-footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#hobby-footer li{
+    display: inline;
+}
+
+#hobby-footer ul li a:hover{
+    color: red;
+    }
+
+/*************************************Elements Selectors*************************************/
+p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+

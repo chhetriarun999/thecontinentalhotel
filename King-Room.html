@@ -1,0 +1,135 @@
+<!-------------------------------------------------------------------------------------
+King-Room.html
+Arun Chhetri (T00722321)
+Fist Website Designing Assignment:   The Continental Hotel 
+
+This page offers all the services available in one King Room of a Hotel. 
+--------------------------------------------------------------------------------------->
+
+
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is Assignment 1"> 
+    <meta name="keywords" content="HTML, CSS ">
+    <meta name="author" content="Arun Chhetri">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>King Room - The Continental Hotel</title>
+    <link rel="icon" href="Images/Contential-logo.jpg" type="image/png">
+    <link rel="stylesheet" href="rooms.css" type="text/css"> 
+    <style> 
+        /*---------------------------------------------------------INTERNAL CSS---------------------------------------------*/
+        .KR-Room {
+            float: right;
+        }
+
+        p {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body> 
+
+    <!-- ------------- HEADER SECTION ------------- -->
+    <header class="hobby-header"> 
+        <div class="hobby-container">
+            <div style="display: flex; align-items: center;">
+                <img src="Images/Contential-logo.jpg" class="hobby-logo" alt="Logo">
+                <div class="hobby-title">The Continental Hotel</div>
+            </div>
+            <nav class="hobby-nav clearfix">
+                <ul> 
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">DINING</a></li>
+                    <li><a href="#">DESTINATIONS</a></li>
+                    <li><a href="#">OFFERS</a></li>
+                    <li><a href="#">MEMBERSHIPS</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <!-- ------------- MAIN BODY SECTION ------------- -->
+    <img src="Images/King-Room.jpg" width="1500" height="594.2"> 
+
+    <div>
+        <h1 style="font-size: 60Px; text-align: center; margin-bottom: 0%; margin-top: 5%;">King Room</h1>
+    </div>
+
+    <div> 
+        <p style="text-align: center; margin-top: 0%; padding-top: 0%; margin-bottom: 10%;"> 
+            A luxurious King room offers a plush King-sized mattress, a cozy seating area, a flat-screen TV, and high-speed Wi-Fi. 
+            <br> The bathroom includes a walk-in shower and premium toiletries, creating a comfortable and elegant stay.
+        </p>
+    </div>
+
+    <h1>Room Overview:  </h1>
+    <div> 
+        <div class="KR-Room"> 
+            <img src="Images/View.jpg" alt="King Room" width="746.55px" height="450" style="float: right; clear: both;"> 
+            
+        </div>
+
+        <table cellpadding="5"> 
+            <tr> 
+                <th>Max.Capacity</th>
+                <th>Size</th>
+                <th>Bed Type</th>
+            </tr>
+            <tr> 
+                <td><img src="Images/icon-person.jpg" height="25" width="25" style="vertical-align: middle;"> 2 Adults</td>
+                <td><img src="Images/angle-scale.webp" height="30" width="30" style="vertical-align: middle;"> 28m<sup>2</sup>/300ft<sup>2</sup></td>
+                <td><img src="Images/bed-logo.png" height="30" width="30" style="vertical-align: middle;"> King Bed</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Beds and Bedding</h3>
+    <ul>
+        <li>1 King Bed</li>
+        <li>Pillow-Top Mattress</li>
+        <li>Premium Bedding & Duvets</li>
+    </ul>
+
+    <h3>Bathroom Features</h3> 
+    <ul> 
+        <li>Private 3-Piece Bathroom</li>
+        <li>Shower</li>
+        <li>Single Sink Vanity & Toilet</li>
+        <li>Complimentary Bath Amenities</li>
+    </ul>
+    
+    <h3>Dining Options</h3> 
+    <ul> 
+        <li>Mayo Restaurant with Room Service</li>
+        <li>Hi-Life Club Sports Bar & Grill</li>
+    </ul>
+    
+
+    <!-- ------------- BOOK NOW BUTTON ------------- -->
+    <a href="Hotel-main-page.html?roomtype=King#form"> 
+        <input type="button" value="Book Now" class="book-now-btn"> </a>
+
+
+    <!-- ------------- FOOTER SECTION ------------- -->
+    <footer id="hobby-footer">
+        <ul>
+            <li><a href="#">ABOUT CONTINENTAL</a></li>
+            <li><a href="#">HOLIDAYS</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">EVENTS VENUE</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">FEEDBACK</a></li>
+            <li><a href="#">CUSTOMER SERVICE</a></li>
+            <li><a href="#">LOST AND FOUND</a></li>
+        </ul>
+
+        <p style="font-size: larger;">&copy; All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

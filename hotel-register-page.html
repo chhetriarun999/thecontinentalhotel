@@ -1,0 +1,381 @@
+<!-------------------------------------------------------------------------------------
+hotel-register-page.html
+Arun Chhetri (T00722321)
+Fist Website Designing Assignment:   
+
+This is the sign up page of The Continental Hotel. It asks user information to create
+user account to give access to the hotel for using its services. 
+--------------------------------------------------------------------------------------->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Assignment 1"> 
+        <meta name="keywords" content="HTML, CSS ">
+        <meta name="author" content="Arun Chhetri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>
+           Sign-up 
+        </title>    
+
+    <link rel="icon" href="#" type="image/png">
+  <!---  <link rel="stylesheet" href="Hotel-login-page.css">--->
+        <Style>
+            *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-size:cover;
+}
+
+.glass-container{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.glass-container::before {
+
+content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+.login-box{
+    max-width:250px;
+    margin:0 auto;
+    text-align:center;
+
+}
+
+h2{
+    color:#fff;
+    margin-top:30px;
+    margin-bottom:-20px;
+
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    margin-top:20px;
+}
+
+input{
+    padding: 10px;
+    margin-top:25px;
+    border: 1px solid white;
+    border-radius:10px;
+    background:transparent;
+    border: 1 px solid #fff;
+    color: #fff;
+    font-size: 13px;
+
+}
+
+input::placeholder {
+    color: #fff;
+
+}
+
+input:focus{
+    outline:none;
+
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    margin-top:15px;
+    font-size: 12px;
+    color: white;
+
+}
+
+.options input{
+    margin-right: 5px;
+    margin-top: 0px;
+
+}
+
+.options a{
+    text-decoration: none;
+    color: white;
+    margin-left:auto;
+
+}
+
+button{
+    background:#fff;
+    color:black;
+    padding: 10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background: transparent;
+    color: white;
+    outline: 1px solid #fff;
+
+}
+
+p{
+    font-size: 12px;
+    color:#fff;
+    margin-top:15px;
+}
+p{
+    font-size: 12px;
+    color: #fff;
+    margin-top:15px;
+}
+
+#register{
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+}
+
+h1{
+    display: flex;
+    position: absolute;
+    margin-bottom: 38%;
+    margin-left: 2%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-size: 60px;
+}
+
+
+/* Complete Booking Button Styles */
+.complete-booking-button {
+    display: inline-block;
+    width: auto;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #1668e3, #134bbf);
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.complete-booking-button:hover {
+    background: linear-gradient(135deg, #134bbf, #1668e3);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.complete-booking-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+        </Style>
+
+
+
+    </head>
+    <body>
+
+<h1>Organization</h1>
+    <div class="glass-container">
+        <div class="login-box">
+            <h2> Register</h2> 
+            <form action="#" method="POST"> 
+
+                <input type="text" id="username" name="UserName" required placeholder="Username" maxlength="20">
+                
+                <input type="password" id="password" name="password" required placeholder="Password"> 
+
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password"> 
+
+                <input type="email" id="email" name="email" required placeholder="someone@gmail.com"> 
+
+                <input type="text" id="phoneNumber" name="phoneNumber" required placeholder="250-879-0575" maxlength="10"> 
+                
+                <button type="submit" id="register-btn"> Register </button>
+
+
+                <!--<div style="text-align: center; margin-top: 20px;">
+    <button id="complete-booking-button" type="submit" class="complete-booking-button">Complete Booking</button>
+</div>
+
+-->
+
+                <p> Have an account? <a href="#" id="register"> Login </a></p> 
+            </form>
+        </div> 
+    </div>
+
+    <script>
+        document.getElementById('register-btn').addEventListener('click', function(event) {
+            const name = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const email = document.getElementById('email').value;
+            const phoneNumber = document.getElementById('phoneNumber').value;
+
+//  const usernameRegex = /^[a-zA-Z0-9_]{5,20}$/; // Username: 5-20 characters, letters, numbers, underscores only
+/*if (!usernameRegex.test(username)) {
+            alert('Username must be 5-20 characters long and can only contain letters, numbers, and underscores.');
+            event.preventDefault();
+            return;
+        }*/
+
+
+            const nameRegex = /^.{5,20}$/;
+            const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*]).{5,}$/;
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; // Validates a standard email format
+            const phoneRegex = /^[0-9]{10}$/; // Validates exactly 10 numeric digits for phone numbers
+
+
+            if (!nameRegex.test(name)) {
+                alert('Name must be between 5 and 20 characters.');
+                event.preventDefault();
+                return;
+            }
+
+            if (!passwordRegex.test(password)) {
+                alert('Password must contain at least one letter, one number, and one special character, and be at least 5 characters long.');
+                event.preventDefault();
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Password and Confirm Password must match.');
+                event.preventDefault();
+            }
+
+            if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            event.preventDefault();
+            return;
+            }
+
+        // Phone number validation
+            if (!phoneRegex.test(phoneNumber)) {
+            alert('Phone number must be exactly 10 numeric digits.');
+            event.preventDefault();
+            return;
+            }
+
+
+            alert('Form submitted successfully!');
+
+        });
+    </script>
+
+
+
+<!-------Dynamic manipulation and dynamic styling using java
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation with Class Selectors</title>
+    <style>
+        .red-text {
+            color: red;
+        }
+
+        .large-text {
+            font-size: 40px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Hello, World!</h1>
+
+    <button id="changeTextBtn">Change Text</button>
+    <button id="addClassBtn">Add Red Text</button>
+    <button id="toggleSizeBtn">Toggle Font Size</button>
+    <button id="highlightBtn">Highlight Background</button>
+
+    <script>
+        // Select elements using class selectors
+        const title = document.querySelector('.title'); // Selects first element with class 'title'
+        const changeTextBtn = document.getElementById('changeTextBtn');
+        const addClassBtn = document.getElementById('addClassBtn');
+        const toggleSizeBtn = document.getElementById('toggleSizeBtn');
+        const highlightBtn = document.getElementById('highlightBtn');
+
+        // Change the text of the heading
+        changeTextBtn.addEventListener('click', function() {
+            title.textContent = 'Hello, Class Selectors!';
+        });
+
+        // Add the "red-text" class to the title
+        addClassBtn.addEventListener('click', function() {
+            title.classList.add('red-text'); // Adds the 'red-text' class
+        });
+
+        // Toggle the "large-text" class on the title
+        toggleSizeBtn.addEventListener('click', function() {
+            title.classList.toggle('large-text'); // Toggles the 'large-text' class
+        });
+
+        // Highlight the background using the "highlight" class
+        highlightBtn.addEventListener('click', function() {
+            title.classList.add('highlight'); // Adds the 'highlight' class
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+const paragraphInBox = document.querySelector('.box > p'); // Select <p> inside .box
+
+
+to display message:
+
+  <h1>Click the button to see an alert</h1>
+    <button onclick="showAlert()">Show Alert</button>
+
+    <script>
+        function showAlert() {
+            alert('This is an alert message!');
+        }
+    </script>
+
+
+
+-->
+
+    </body>
+    </html>
