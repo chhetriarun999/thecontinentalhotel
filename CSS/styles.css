@@ -1,0 +1,74 @@
+/****************************************************************************************
+
+styles.css
+Arun Chhetri (T00722321)
+Lab Assignment: 5
+
+The pupose of the lab is to build a webpage using the concepts learned: 
+css, inline, external, internal, class, id, div tag, span tag,  etc.
+****************************************************************************************/
+
+/* FOR BODY */
+body{
+    background-image: url(Images/solidcolor2.jpg);
+    background-size: cover;
+}
+/* FOR DIV */
+.main {
+    
+    /*BOX MODEL-ROUNDED CORNORS*/
+    width: 80%; 
+    border:dotted 5px black;
+    border-radius:25px;
+    height: 200Px;
+    margin: 40px;
+    padding: 30px;
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: large;
+    
+    background-color: grey;
+    background-image: url(Images/canada.jpg); /*VECTOR IMAGE- doesnot loose quality*/
+    background-size: 400Px 250Px;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+/*INSERTING BACKGROUND IMAGE INSIDE A SENTENCE AS INSTRUCTED*/
+.hilight{
+    background-image: url(Images/solidcolor.jpg); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:royalblue;
+    /*TOO SMALL SPACE, WONT SHOW DIFFERENCE*/
+    background-position: top; 
+
+}
+
+/*INSERTING BORDER TO THE SPAN TEXT WITH ID paragraph*/
+#paragraph{
+    border:groove lightblue 2px;
+}
+
+
+/*FOR FIRST HEADING WITH ID special-heading*/
+#special-heading{
+        font-family:'Courier New', Courier, monospace;
+        font-size:xx-large;
+        color: gold;
+        font-weight: bolder;
+}
+
+
+/*INSERTING BORDER TO SPAN TEXT OF CLASS para */
+.para{ 
+    border: solid blue 2px;
+
+}
+
+/*INSERTING BORDER TO OTHER SPAN TEXT*/
+span{
+    border:double greenyellow 2px;
+}

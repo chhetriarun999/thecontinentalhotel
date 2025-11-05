@@ -1,0 +1,32 @@
+p{
+    border-top :4px dashed green;
+    border-bottom:4px groove gray;
+    padding: 30px;
+    margin: 70px;
+    background-color: aliceblue;
+    
+}
+body{
+   background-image: url(Images/icon-image.avif);
+  
+    background-size:100px 200px ;
+    background-repeat:repeat-x;*/
+     
+   /* background: black url(Images/large-image.jpg) center no-repeat scroll; */
+
+}
+ /*span {
+
+    color:rgb(239, 69, 211);
+   
+}*/
+.red-text { 
+    /*to access a class you always need to use . at first
+
+    color: red;
+    
+}
+.blue-text {
+    color: blue;
+    background-color: brown;
+}*/
