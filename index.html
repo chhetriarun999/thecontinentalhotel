@@ -28,7 +28,7 @@ user account to give access to the hotel for using its services.
     <div class="glass-container">
         <div class="login-box">
             <h2> Login</h2> 
-            <form action="Hotel-main-page.html" method="POST" onsubmit="return showAlert()"> 
+            <form action="Hotel-main-page.html" method="GET" onsubmit="return showAlert()"> 
 
                 <input type="text" id="username" name="username" required placeholder="Username">
                 
@@ -46,12 +46,7 @@ user account to give access to the hotel for using its services.
             </form>
         </div> 
     </div>
-    <script>
-        function showAlert() {
-            alert('You submitted the form');
-            return true;
-        }
-    </script>
+
     
     </body>
     </html>
